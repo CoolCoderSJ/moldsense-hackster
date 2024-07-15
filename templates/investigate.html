@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MoldSense</title>
+    <link rel="stylesheet" type="text/css" href="https://simplist.shuchir.dev/simplist.css">
+    <style>
+        .hero {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .bold {
+            font-weight: bold;
+        }
+    </style>
+  </head>
+  <body>
+    <main class="hero">
+        <h1>Results</h1>
+        <p>Your bread is <span class="bold">{{percentage}}</span> of the way to its true expiry date. {% if percentage < 50 %}It is most likely safe to eat.{% else %}It is most likely not safe to eat.{% endif %}</p>
+    </main>
+  </body>
+</html>
